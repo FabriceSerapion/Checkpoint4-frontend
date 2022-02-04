@@ -1,9 +1,19 @@
+@import "uikit";
+@import './components/FormulairesConnexionInscription.css';
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: red;
+}
+
+h1 {
+  color: black;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 a {
@@ -13,4 +23,81 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+.container {
+  display: flex;
+}
+
+.container-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 25rem;
+  margin-left: 25rem;
+}
+
+/* css navbar */
+
+.uk-navbar-dropdown {
+  background-color: #2b2623;
+}
+
+.uk-navbar-dropdown-nav > li > a {
+  color: aliceblue;
+}
+
+.horizontalNavBar > div > a {
+  color: black;
+}
+.horizontalNavBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 15vh;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.buttonCards {
+  background-color: #afd87d;
+  margin-bottom: 0.5rem;
+  height: 2.5rem;
+}
+
+p {
+  color: black;
+}
+
+/* Plus de 600 px ( écran PC ) */
+@media only screen and (min-width: 600px) {
+  .NavBar {
+    display: none;
+  }
+
+  .horizontalNavBar {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/* Moins de 600 px ( écran téléphone */
+@media only screen and (max-width: 600px) {
+  .horizontalNavBar {
+    display: none;
+  }
+
+  .uk-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .uk-navbar-container:not {
+  background-color: black;
+} */
+
+  .uk-navbar-dropdown {
+    position: relative;
+  }
 }

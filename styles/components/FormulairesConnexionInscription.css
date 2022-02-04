@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.global-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container-formulaire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.formulaire {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 25vw;
+  height: 75vh;
+  padding: 50px;
+  box-shadow: 5px 12px 15px 1px black;
+  background-color: whitesmoke;
+}
+
+.formulaire > h2 {
+  font-size: 4rem;
+  margin-bottom: 25px;
+  margin-right: 20px;
+}
+
+.input-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.formulaire input {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem 0.7rem;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+#firstname,
+#lastname,
+#email,
+#password {
+  width: 300px;
+}
+
+.formulaire input:focus {
+  border-bottom: 2px solid #f2f307;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#forgot-password,
+#creation-compte {
+  border: 0px;
+  background-color: transparent;
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+#retour-accueil {
+  border: 0px;
+  background-color: transparent;
+  align-self: center;
+}
+
+#forgot-password:hover,
+#creation-compte:hover {
+  cursor: pointer;
+  color: #f2f307;
+}
+
+#connexion-login,
+#inscription-login {
+  width: 300px;
+  height: 35px;
+  border-radius: 15px;
+  border: 0px;
+  color: #ffff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  background-size: 200%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#inscription-login {
+  margin-top: 15px;
+}
+
+#connexion-login:hover,
+#inscription-login:hover {
+  background-position: right;
+  background: rgb(46, 210, 61);
+}
+
+@media screen and (max-width: 1145px) {
+  .formulaire {
+    width: auto;
+    height: 80vh;
+    border-top-right-radius: 0em;
+    border-bottom-right-radius: 0em;
+    margin-left: 0px;
+  }
+}
